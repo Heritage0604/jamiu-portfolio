@@ -1,0 +1,158 @@
+{
+    "sourceFile": "src/components/About.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 35,
+            "patches": [
+                {
+                    "date": 1690207466192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690207472973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react'\n import { Tilt } from 'react-tilt'\n import { motion } from 'framer-motion'\n-import { styles } from '../styles'\n+// import { styles } from '../styles'\n import { services } from '../constants'\n import {fadeIn,textVariant} from \"../utils/motion\"\n import { SectionWrapper } from '../hoc'\n \n"
+                },
+                {
+                    "date": 1690207496313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,35 +5,35 @@\n import { services } from '../constants'\n import {fadeIn,textVariant} from \"../utils/motion\"\n import { SectionWrapper } from '../hoc'\n \n-const ServiceCard = ({ index, title, icon }) => (\n-  <Tilt className='xs:w-[250px] w-full'>\n-    <motion.div\n-      variants={fadeIn(\"right\", \"spring\", index * 0.5, 0.75)}\n-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'\n-    >\n-      <div\n-        options={{\n-          max: 45,\n-          scale: 1,\n-          speed: 450,\n-        }}\n-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'\n-      >\n-        <img\n-          src={icon}\n-          alt='web-development'\n-          className='w-16 h-16 object-contain'\n-        />\n+// const ServiceCard = ({ index, title, icon }) => (\n+//   <Tilt className='xs:w-[250px] w-full'>\n+//     <motion.div\n+//       variants={fadeIn(\"right\", \"spring\", index * 0.5, 0.75)}\n+//       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'\n+//     >\n+//       <div\n+//         options={{\n+//           max: 45,\n+//           scale: 1,\n+//           speed: 450,\n+//         }}\n+//         className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'\n+//       >\n+//         <img\n+//           src={icon}\n+//           alt='web-development'\n+//           className='w-16 h-16 object-contain'\n+//         />\n \n-        <h3 className='text-white text-[20px] font-bold text-center'>\n-          {title}\n-        </h3>\n-      </div>\n-    </motion.div>\n-  </Tilt>\n-);\n+//         <h3 className='text-white text-[20px] font-bold text-center'>\n+//           {title}\n+//         </h3>\n+//       </div>\n+//     </motion.div>\n+//   </Tilt>\n+// );\n const About = () => {\n   return (\n    <>\n    <motion.div variants={textVariant()}>\n"
+                },
+                {
+                    "date": 1690207578309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { Tilt } from 'react-tilt'\n import { motion } from 'framer-motion'\n // import { styles } from '../styles'\n import { services } from '../constants'\n-import {fadeIn,textVariant} from \"../utils/motion\"\n+import {fadeIn,textVariant} from \"../assets/motion\"\n import { SectionWrapper } from '../hoc'\n \n // const ServiceCard = ({ index, title, icon }) => (\n //   <Tilt className='xs:w-[250px] w-full'>\n"
+                },
+                {
+                    "date": 1690207749038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,65 +1,1 @@\n-import React from 'react'\n-import { Tilt } from 'react-tilt'\n-import { motion } from 'framer-motion'\n-// import { styles } from '../styles'\n-import { services } from '../constants'\n-import {fadeIn,textVariant} from \"../assets/motion\"\n-import { SectionWrapper } from '../hoc'\n-\n-// const ServiceCard = ({ index, title, icon }) => (\n-//   <Tilt className='xs:w-[250px] w-full'>\n-//     <motion.div\n-//       variants={fadeIn(\"right\", \"spring\", index * 0.5, 0.75)}\n-//       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'\n-//     >\n-//       <div\n-//         options={{\n-//           max: 45,\n-//           scale: 1,\n-//           speed: 450,\n-//         }}\n-//         className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'\n-//       >\n-//         <img\n-//           src={icon}\n-//           alt='web-development'\n-//           className='w-16 h-16 object-contain'\n-//         />\n-\n-//         <h3 className='text-white text-[20px] font-bold text-center'>\n-//           {title}\n-//         </h3>\n-//       </div>\n-//     </motion.div>\n-//   </Tilt>\n-// );\n-const About = () => {\n-  return (\n-   <>\n-   <motion.div variants={textVariant()}>\n-    <p className={`${styles.sectionSubText}`}>Introduction</p>\n-    <p className={`${styles.sectionHeadText}`}>Overview</p>\n-   </motion.div>\n-    <motion.p\n-        variants={fadeIn(\"\", \"\", 0.1, 1)}\n-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'\n-      >\n-        I'm a skilled software developer with experience in TypeScript and\n-        JavaScript, and expertise in frameworks like React, Node.js, and\n-        Three.js. I'm a quick learner and collaborate closely with clients to\n-        create efficient, scalable, and user-friendly solutions that solve\n-        real-world problems. Let's work together to bring your ideas to life!\n-      </motion.p>\n-      <div className='mt-20  flex justify-center flex-wrap gap-10'>\n-        \n-{/* {services.map((service,index)=>{\n-  return(\n-   <ServiceCard key={service.title} index={index} title={service.title} icon={service.icon}/>\n-  )\n-})} */}\n-      </div>\n-   </>\n-  )\n-}\n-\n-export default SectionWrapper(About,\"about\")\n\\ No newline at end of file\n+tsrafce\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690207757633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-tsrafce\n\\ No newline at end of file\n+rfce\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690207843076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-rfce\n\\ No newline at end of file\n+import React from 'react'\r\n+import { SectionWrapper } from '../hoc'\r\n+\r\n+const About = () => {\r\n+  return (\r\n+    <div>About</div>\r\n+  )\r\n+}\r\n+\r\n+export default About\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690207902037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-import { SectionWrapper } from '../hoc'\r\n+import {Sex}\r\n \r\n const About = () => {\r\n   return (\r\n     <div>About</div>\r\n"
+                },
+                {
+                    "date": 1690207908437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-import {Sex}\r\n+import {SectionWrapper}\r\n \r\n const About = () => {\r\n   return (\r\n     <div>About</div>\r\n"
+                },
+                {
+                    "date": 1690207915695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-import {SectionWrapper}\r\n+import {SectionWrapper} from \"../hoc\"\r\n \r\n const About = () => {\r\n   return (\r\n     <div>About</div>\r\n"
+                },
+                {
+                    "date": 1690207934113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-import {SectionWrapper} from \"../hoc\"\r\n+import {StarWrapper} from \"../hoc\"\r\n \r\n const About = () => {\r\n   return (\r\n     <div>About</div>\r\n"
+                },
+                {
+                    "date": 1690208013283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-import {StarWrapper} from \"../hoc\"\r\n+// import {StarWrapper} from \"../hoc\"\r\n \r\n const About = () => {\r\n   return (\r\n     <div>About</div>\r\n"
+                },
+                {
+                    "date": 1690208091721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-// import {StarWrapper} from \"../hoc\"\r\n+import {StarWrapper} from \"../hoc\"\r\n \r\n const About = () => {\r\n   return (\r\n     <div>About</div>\r\n"
+                },
+                {
+                    "date": 1690208150884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-import {StarWrapper} from \"../hoc\"\r\n+// import {StarWrapper} from \"../hoc\"\r\n \r\n const About = () => {\r\n   return (\r\n     <div>About</div>\r\n"
+                },
+                {
+                    "date": 1690208204452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-// import {StarWrapper} from \"../hoc\"\r\n+import {StarWrapper} from \"../hoc\"\r\n \r\n const About = () => {\r\n   return (\r\n     <div>About</div>\r\n"
+                },
+                {
+                    "date": 1690208310315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-import {StarWrapper} from \"../hoc\"\r\n+import { SectionWrapper } from '../hoc'\r\n \r\n const About = () => {\r\n   return (\r\n     <div>About</div>\r\n"
+                },
+                {
+                    "date": 1690208317987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,9 @@\n import React from 'react'\r\n import { SectionWrapper } from '../hoc'\r\n+import { Tilt } from 'react-tilt'\r\n+import { motion } from 'framer-motion'\r\n+import { styles } from '../styles'\r\n \r\n const About = () => {\r\n   return (\r\n     <div>About</div>\r\n"
+                },
+                {
+                    "date": 1690208326764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import { SectionWrapper } from '../hoc'\r\n import { Tilt } from 'react-tilt'\r\n import { motion } from 'framer-motion'\r\n import { styles } from '../styles'\r\n+import {fadeIn,textVariant} from \"../utils/motion\"\r\n \r\n const About = () => {\r\n   return (\r\n     <div>About</div>\r\n"
+                },
+                {
+                    "date": 1690208350913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,5 @@\n     <div>About</div>\r\n   )\r\n }\r\n \r\n-export default About\n\\ No newline at end of file\n+export default  SectionWrapper(About,\"about\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690278097280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import React from 'react'\r\n+import { SectionWrapper } from '../hoc'\r\n+import { Tilt } from 'react-tilt'\r\n+import { motion } from 'framer-motion'\r\n+import { styles } from '../styles'\r\n+import {fadeIn,textVariant} from \"../utils/motion\"\r\n+\r\n+const About = () => {\r\n+  return (\r\n+   <Flex>\r\n+    \r\n+   </Flex>\r\n+  )\r\n+}\r\n+\r\n+export default  SectionWrapper(About,\"about\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690278119441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,28 +3,15 @@\n import { Tilt } from 'react-tilt'\r\n import { motion } from 'framer-motion'\r\n import { styles } from '../styles'\r\n import {fadeIn,textVariant} from \"../utils/motion\"\r\n+import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'\r\n \r\n const About = () => {\r\n   return (\r\n    <Flex>\r\n-    \r\n+\r\n    </Flex>\r\n   )\r\n }\r\n \r\n-export default  SectionWrapper(About,\"about\")\n-import React from 'react'\r\n-import { SectionWrapper } from '../hoc'\r\n-import { Tilt } from 'react-tilt'\r\n-import { motion } from 'framer-motion'\r\n-import { styles } from '../styles'\r\n-import {fadeIn,textVariant} from \"../utils/motion\"\r\n-\r\n-const About = () => {\r\n-  return (\r\n-    <div>About</div>\r\n-  )\r\n-}\r\n-\r\n export default  SectionWrapper(About,\"about\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690278139783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n const About = () => {\r\n   return (\r\n    <Flex>\r\n-\r\n+<Text></Text>\r\n    </Flex>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1690278145181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n const About = () => {\r\n   return (\r\n    <Flex>\r\n-<Text></Text>\r\n+<Text>About Me</Text>\r\n    </Flex>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1690278160724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n const About = () => {\r\n   return (\r\n    <Flex>\r\n-<Text>About Me</Text>\r\n+<Flex></Flex>\r\n    </Flex>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1690278168415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'\r\n \r\n const About = () => {\r\n   return (\r\n-   <Flex>\r\n+   <Flex justify=\"center\">\r\n <Flex></Flex>\r\n    </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690278175282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'\r\n \r\n const About = () => {\r\n   return (\r\n-   <Flex justify=\"center\">\r\n+   <Flex justify=\"center\" width={\"100%\"}>\r\n <Flex></Flex>\r\n    </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690278182870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'\r\n \r\n const About = () => {\r\n   return (\r\n-   <Flex justify=\"center\" width={\"100%\"}>\r\n+   <Flex justify=\"center\" border={\"1px solid red\"} width={\"100%\"}>\r\n <Flex></Flex>\r\n    </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690278189295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,11 @@\n \r\n const About = () => {\r\n   return (\r\n    <Flex justify=\"center\" border={\"1px solid red\"} width={\"100%\"}>\r\n-<Flex></Flex>\r\n+<Flex>\r\n+    \r\n+</Flex>\r\n    </Flex>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1690278197181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const About = () => {\r\n   return (\r\n    <Flex justify=\"center\" border={\"1px solid red\"} width={\"100%\"}>\r\n <Flex>\r\n-    \r\n+    <Text>ABOUT ME</Text>\r\n </Flex>\r\n    </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690278205598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n const About = () => {\r\n   return (\r\n    <Flex justify=\"center\" border={\"1px solid red\"} width={\"100%\"}>\r\n-<Flex>\r\n+<Flex width={\"100\"}>\r\n     <Text>ABOUT ME</Text>\r\n </Flex>\r\n    </Flex>\r\n   )\r\n"
+                },
+                {
+                    "date": 1690278211034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n const About = () => {\r\n   return (\r\n    <Flex justify=\"center\" border={\"1px solid red\"} width={\"100%\"}>\r\n-<Flex width={\"100\"}>\r\n+<Flex width={\"160\"}>\r\n     <Text>ABOUT ME</Text>\r\n </Flex>\r\n    </Flex>\r\n   )\r\n"
+                },
+                {
+                    "date": 1690278217856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n const About = () => {\r\n   return (\r\n    <Flex justify=\"center\" border={\"1px solid red\"} width={\"100%\"}>\r\n-<Flex width={\"160\"}>\r\n+<Flex width={\"60%\"}>\r\n     <Text>ABOUT ME</Text>\r\n </Flex>\r\n    </Flex>\r\n   )\r\n"
+                },
+                {
+                    "date": 1690278228241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n const About = () => {\r\n   return (\r\n    <Flex justify=\"center\" border={\"1px solid red\"} width={\"100%\"}>\r\n-<Flex width={\"60%\"}>\r\n+<Flex width={\"70%\"}>\r\n     <Text>ABOUT ME</Text>\r\n </Flex>\r\n    </Flex>\r\n   )\r\n"
+                },
+                {
+                    "date": 1690278238312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n const About = () => {\r\n   return (\r\n    <Flex justify=\"center\" border={\"1px solid red\"} width={\"100%\"}>\r\n-<Flex width={\"70%\"}>\r\n+<Flex width={\"80%\"}>\r\n     <Text>ABOUT ME</Text>\r\n </Flex>\r\n    </Flex>\r\n   )\r\n"
+                },
+                {
+                    "date": 1690278246028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'\r\n \r\n const About = () => {\r\n   return (\r\n-   <Flex bg={\"blu\"} justify=\"center\" border={\"1px solid red\"} width={\"100%\"}>\r\n+   <Flex bg={\"blue\"} justify=\"center\" border={\"1px solid red\"} width={\"100%\"}>\r\n <Flex width={\"80%\"}>\r\n     <Text>ABOUT ME</Text>\r\n </Flex>\r\n    </Flex>\r\n"
+                },
+                {
+                    "date": 1690278378401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+import React from 'react'\r\n+import { SectionWrapper } from '../hoc'\r\n+import { Tilt } from 'react-tilt'\r\n+import { motion } from 'framer-motion'\r\n+import { styles } from '../styles'\r\n+import {fadeIn,textVariant} from \"../utils/motion\"\r\n+import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'\r\n+\r\n+const About = () => {\r\n+  return (\r\n+   <Flex height={\"50vh\"} bg={\"blue.100\"} justify=\"center\" border={\"1px solid red\"} width={\"100%\"}>\r\n+<Flex width={\"80%\"} mt={\"2vh\"}>\r\n+    <Text fontWeight={\"400\"} fontSize={{base:\"15px\",md:\"25px\"}}>ABOUT ME</Text>\r\n+</Flex>\r\n+   </Flex>\r\n+  )\r\n+}\r\n+\r\n+export default  SectionWrapper(About,\"about\")\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1690207466192,
+            "name": "Commit-0",
+            "content": "import React from 'react'\nimport { Tilt } from 'react-tilt'\nimport { motion } from 'framer-motion'\nimport { styles } from '../styles'\nimport { services } from '../constants'\nimport {fadeIn,textVariant} from \"../utils/motion\"\nimport { SectionWrapper } from '../hoc'\n\nconst ServiceCard = ({ index, title, icon }) => (\n  <Tilt className='xs:w-[250px] w-full'>\n    <motion.div\n      variants={fadeIn(\"right\", \"spring\", index * 0.5, 0.75)}\n      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'\n    >\n      <div\n        options={{\n          max: 45,\n          scale: 1,\n          speed: 450,\n        }}\n        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'\n      >\n        <img\n          src={icon}\n          alt='web-development'\n          className='w-16 h-16 object-contain'\n        />\n\n        <h3 className='text-white text-[20px] font-bold text-center'>\n          {title}\n        </h3>\n      </div>\n    </motion.div>\n  </Tilt>\n);\nconst About = () => {\n  return (\n   <>\n   <motion.div variants={textVariant()}>\n    <p className={`${styles.sectionSubText}`}>Introduction</p>\n    <p className={`${styles.sectionHeadText}`}>Overview</p>\n   </motion.div>\n    <motion.p\n        variants={fadeIn(\"\", \"\", 0.1, 1)}\n        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'\n      >\n        I'm a skilled software developer with experience in TypeScript and\n        JavaScript, and expertise in frameworks like React, Node.js, and\n        Three.js. I'm a quick learner and collaborate closely with clients to\n        create efficient, scalable, and user-friendly solutions that solve\n        real-world problems. Let's work together to bring your ideas to life!\n      </motion.p>\n      <div className='mt-20  flex justify-center flex-wrap gap-10'>\n        \n{/* {services.map((service,index)=>{\n  return(\n   <ServiceCard key={service.title} index={index} title={service.title} icon={service.icon}/>\n  )\n})} */}\n      </div>\n   </>\n  )\n}\n\nexport default SectionWrapper(About,\"about\")"
+        }
+    ]
+}

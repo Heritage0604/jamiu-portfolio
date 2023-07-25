@@ -1,0 +1,154 @@
+{
+    "sourceFile": "src/App.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 34,
+            "patches": [
+                {
+                    "date": 1690194649693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690194655503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,16 @@\n import { useState } from 'react'\n import reactLogo from './assets/react.svg'\n import viteLogo from '/vite.svg'\n import './App.css'\n+import { Box } from '@chakra-ui/react'\n \n function App() {\n   const [count, setCount] = useState(0)\n \n   return (\n   <Box>\n-    <Flex\n+    <Flex></Flex>\n   </Box>\n   )\n }\n \n"
+                },
+                {
+                    "date": 1690194665501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   const [count, setCount] = useState(0)\n \n   return (\n   <Box>\n-    <Flex></Flex>\n+    <Flexx></Flexx>\n   </Box>\n   )\n }\n \n"
+                },
+                {
+                    "date": 1690194676608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,17 @@\n import { useState } from 'react'\n import reactLogo from './assets/react.svg'\n import viteLogo from '/vite.svg'\n import './App.css'\n-import { Box } from '@chakra-ui/react'\n+import { Box, Flex } from '@chakra-ui/react'\n \n function App() {\n   const [count, setCount] = useState(0)\n \n   return (\n   <Box>\n-    <Flexx></Flexx>\n+    <Flex\n+    Hey></Flex>\n   </Box>\n   )\n }\n \n"
+                },
+                {
+                    "date": 1690194686269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,18 @@\n import { useState } from 'react'\n import reactLogo from './assets/react.svg'\n import viteLogo from '/vite.svg'\n-import './App.css'\n+// import './App.css'\n import { Box, Flex } from '@chakra-ui/react'\n \n function App() {\n   const [count, setCount] = useState(0)\n \n   return (\n   <Box>\n-    <Flex\n-    Hey></Flex>\n+    <Flex>\n+      \\Hey\n+    </Flex>\n   </Box>\n   )\n }\n \n"
+                },
+                {
+                    "date": 1690194708825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,11 @@\n \n   return (\n   <Box>\n     <Flex>\n-      \\Hey\n+     <Flex>\n+      <Text></Text>\n+     </Flex>\n     </Flex>\n   </Box>\n   )\n }\n"
+                },
+                {
+                    "date": 1690194796976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,11 @@\n   return (\n   <Box>\n     <Flex>\n      <Flex>\n-      <Text></Text>\n+      <Text>\n+        Jamiu\n+      </Text>\n      </Flex>\n     </Flex>\n   </Box>\n   )\n"
+                },
+                {
+                    "date": 1690194805511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   const [count, setCount] = useState(0)\n \n   return (\n   <Box>\n-    <Flex>\n+    <Flex border=[\"\"]>\n      <Flex>\n       <Text>\n         Jamiu\n       </Text>\n"
+                },
+                {
+                    "date": 1690194814398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   const [count, setCount] = useState(0)\n \n   return (\n   <Box>\n-    <Flex border=[\"\"]>\n+    <Flex border={\"1\"}>\n      <Flex>\n       <Text>\n         Jamiu\n       </Text>\n"
+                },
+                {
+                    "date": 1690194842680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,16 @@\n import { useState } from 'react'\n import reactLogo from './assets/react.svg'\n import viteLogo from '/vite.svg'\n-// import './App.css'\n-import { Box, Flex } from '@chakra-ui/react'\n+import './App.css'\n+import { Box } from '@chakra-ui/react'\n \n function App() {\n   const [count, setCount] = useState(0)\n \n   return (\n   <Box>\n-    <Flex border={\"1\"}>\n-     <Flex>\n-      <Text>\n-        Jamiu\n-      </Text>\n-     </Flex>\n-    </Flex>\n+    <Flex></Flex>\n   </Box>\n   )\n }\n \n"
+                },
+                {
+                    "date": 1690194854285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,35 @@\n import { useState } from 'react'\n import reactLogo from './assets/react.svg'\n import viteLogo from '/vite.svg'\n import './App.css'\n-import { Box } from '@chakra-ui/react'\n \n function App() {\n   const [count, setCount] = useState(0)\n \n   return (\n-  <Box>\n-    <Flex></Flex>\n-  </Box>\n+    <>\n+      <div>\n+        <a href=\"https://vitejs.dev\" target=\"_blank\">\n+          <img src={viteLogo} className=\"logo\" alt=\"Vite logo\" />\n+        </a>\n+        <a href=\"https://react.dev\" target=\"_blank\">\n+          <img src={reactLogo} className=\"logo react\" alt=\"React logo\" />\n+        </a>\n+      </div>\n+      <h1>Vite + React Hello</h1>\n+      <div className=\"card\">\n+        <button onClick={() => setCount((count) => count + 1)}>\n+          count is {count}\n+        </button>\n+        <p>\n+          Edit <code>src/App.jsx</code> and save to test HMR\n+        </p>\n+      </div>\n+      <p className=\"read-the-docs\">\n+        Click on the Vite and React logos to learn more\n+      </p>\n+    </>\n   )\n }\n \n export default App\n"
+                },
+                {
+                    "date": 1690194865902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,28 +7,9 @@\n   const [count, setCount] = useState(0)\n \n   return (\n     <>\n-      <div>\n-        <a href=\"https://vitejs.dev\" target=\"_blank\">\n-          <img src={viteLogo} className=\"logo\" alt=\"Vite logo\" />\n-        </a>\n-        <a href=\"https://react.dev\" target=\"_blank\">\n-          <img src={reactLogo} className=\"logo react\" alt=\"React logo\" />\n-        </a>\n-      </div>\n-      <h1>Vite + React Hello</h1>\n-      <div className=\"card\">\n-        <button onClick={() => setCount((count) => count + 1)}>\n-          count is {count}\n-        </button>\n-        <p>\n-          Edit <code>src/App.jsx</code> and save to test HMR\n-        </p>\n-      </div>\n-      <p className=\"read-the-docs\">\n-        Click on the Vite and React logos to learn more\n-      </p>\n+     Hey\n     </>\n   )\n }\n \n"
+                },
+                {
+                    "date": 1690194874520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,15 @@\n import { useState } from 'react'\n import reactLogo from './assets/react.svg'\n import viteLogo from '/vite.svg'\n-import './App.css'\n+// import './App.css'\n \n function App() {\n   const [count, setCount] = useState(0)\n \n   return (\n     <>\n+    <Box\n      Hey\n     </>\n   )\n }\n"
+                },
+                {
+                    "date": 1690194884487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,16 @@\n import { useState } from 'react'\n import reactLogo from './assets/react.svg'\n import viteLogo from '/vite.svg'\n+import { Box } from '@chakra-ui/react'\n // import './App.css'\n \n function App() {\n   const [count, setCount] = useState(0)\n \n   return (\n     <>\n-    <Box\n+    <Box><</Box>\n      Hey\n     </>\n   )\n }\n"
+                },
+                {
+                    "date": 1690194892073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,17 @@\n import { useState } from 'react'\n import reactLogo from './assets/react.svg'\n import viteLogo from '/vite.svg'\n-import { Box } from '@chakra-ui/react'\n+import { Box, Flex } from '@chakra-ui/react'\n // import './App.css'\n \n function App() {\n   const [count, setCount] = useState(0)\n \n   return (\n     <>\n-    <Box><</Box>\n+    <Box><Flex>\n+      Hey again</Flex></Box>\n      Hey\n     </>\n   )\n }\n"
+                },
+                {
+                    "date": 1690194900087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,11 @@\n \n   return (\n     <>\n     <Box><Flex>\n-      Hey again</Flex></Box>\n+      Hey again\n+      </Flex>\n+      </Box>\n      Hey\n     </>\n   )\n }\n"
+                },
+                {
+                    "date": 1690194908809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,11 @@\n   const [count, setCount] = useState(0)\n \n   return (\n     <>\n-    <Box><Flex>\n-      Hey again\n+    <Box>\n+      <Flex>\n+   <Flex></Flex>\n       </Flex>\n       </Box>\n      Hey\n     </>\n"
+                },
+                {
+                    "date": 1690194919413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n   return (\n     <>\n     <Box>\n       <Flex>\n-   <Flex></Flex>\n+   <Flex><Text>\n+    </Text></Flex>\n       </Flex>\n       </Box>\n      Hey\n     </>\n"
+                },
+                {
+                    "date": 1690194925024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { useState } from 'react'\n import reactLogo from './assets/react.svg'\n import viteLogo from '/vite.svg'\n-import { Box, Flex } from '@chakra-ui/react'\n+import { Box, Flex,Text } from '@chakra-ui/react'\n // import './App.css'\n \n function App() {\n   const [count, setCount] = useState(0)\n@@ -11,9 +11,9 @@\n     <>\n     <Box>\n       <Flex>\n    <Flex><Text>\n-    </Text></Flex>\n+    4</Text></Flex>\n       </Flex>\n       </Box>\n      Hey\n     </>\n"
+                },
+                {
+                    "date": 1690194930264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,10 @@\n     <>\n     <Box>\n       <Flex>\n    <Flex><Text>\n-    4</Text></Flex>\n+    4</Text>\n+    </Flex>\n       </Flex>\n       </Box>\n      Hey\n     </>\n"
+                },
+                {
+                    "date": 1690194935949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n   return (\n     <>\n     <Box>\n       <Flex>\n-   <Flex><Text>\n+   <Flex>\n+    <Text>\n     4</Text>\n     </Flex>\n       </Flex>\n       </Box>\n"
+                },
+                {
+                    "date": 1690194944098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n   return (\n     <>\n     <Box>\n-      <Flex>\n+      <Flex border={\"1pxmsolid black\"}>\n    <Flex>\n     <Text>\n     4</Text>\n     </Flex>\n"
+                },
+                {
+                    "date": 1690194954018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n   return (\n     <>\n     <Box>\n-      <Flex border={\"1pxmsolid black\"}>\n+      <Flex width={\"100%\"} border={\"1px solid black\"}>\n    <Flex>\n     <Text>\n     4</Text>\n     </Flex>\n"
+                },
+                {
+                    "date": 1690194960917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n   return (\n     <>\n     <Box>\n-      <Flex width={\"100%\"} border={\"1px solid black\"}>\n+      <Flex width={\"10vw\"} border={\"1px solid black\"}>\n    <Flex>\n     <Text>\n     4</Text>\n     </Flex>\n"
+                },
+                {
+                    "date": 1690194970291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   const [count, setCount] = useState(0)\n \n   return (\n     <>\n-    <Box>\n+    <Box border={\"1px solid red\"}>\n       <Flex width={\"10vw\"} border={\"1px solid black\"}>\n    <Flex>\n     <Text>\n     4</Text>\n"
+                },
+                {
+                    "date": 1690194986749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n   return (\n     <>\n     <Box border={\"1px solid red\"}>\n-      <Flex width={\"10vw\"} border={\"1px solid black\"}>\n+      <Flex width={\"100vw\" height} border={\"1px solid black\"}>\n    <Flex>\n     <Text>\n     4</Text>\n     </Flex>\n"
+                },
+                {
+                    "date": 1690195250399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,12 +9,12 @@\n \n   return (\n     <>\n     <Box border={\"1px solid red\"}>\n-      <Flex width={\"100vw\" height} border={\"1px solid black\"}>\n+      <Flex width={\"100vw\"} border={\"1px solid black\"}>\n    <Flex>\n     <Text>\n-    4</Text>\n+    Jamiu</Text>\n     </Flex>\n       </Flex>\n       </Box>\n      Hey\n"
+                },
+                {
+                    "date": 1690195273335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,12 @@\n     <Box border={\"1px solid red\"}>\n       <Flex width={\"100vw\"} border={\"1px solid black\"}>\n    <Flex>\n     <Text>\n-    Jamiu</Text>\n+    Jamiu\n+    </Text>\n     </Flex>\n+    <Flex></Flex>\n       </Flex>\n       </Box>\n      Hey\n     </>\n"
+                },
+                {
+                    "date": 1690195281716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n     <Text>\n     Jamiu\n     </Text>\n     </Flex>\n-    <Flex></Flex>\n+    <Flex>\n+      <Text>Services</Text>\n+    </Flex>\n       </Flex>\n       </Box>\n      Hey\n     </>\n"
+                },
+                {
+                    "date": 1690195288308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,11 @@\n     </Text>\n     </Flex>\n     <Flex>\n       <Text>Services</Text>\n+      <Text>Services</Text>\n+      <Text>Services</Text>\n+      <Text>Services</Text>\n     </Flex>\n       </Flex>\n       </Box>\n      Hey\n"
+                },
+                {
+                    "date": 1690195294537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,12 +16,12 @@\n     Jamiu\n     </Text>\n     </Flex>\n     <Flex>\n+      <Text>SERVICES</Text>\n       <Text>Services</Text>\n       <Text>Services</Text>\n       <Text>Services</Text>\n-      <Text>Services</Text>\n     </Flex>\n       </Flex>\n       </Box>\n      Hey\n"
+                },
+                {
+                    "date": 1690195301749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,11 @@\n     </Text>\n     </Flex>\n     <Flex>\n       <Text>SERVICES</Text>\n+      <Text>ABOUT ME</Text>\n       <Text>Services</Text>\n       <Text>Services</Text>\n-      <Text>Services</Text>\n     </Flex>\n       </Flex>\n       </Box>\n      Hey\n"
+                },
+                {
+                    "date": 1690195309314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n     </Flex>\n     <Flex>\n       <Text>SERVICES</Text>\n       <Text>ABOUT ME</Text>\n+      <Text>WORKS</Text>\n       <Text>Services</Text>\n-      <Text>Services</Text>\n     </Flex>\n       </Flex>\n       </Box>\n      Hey\n"
+                },
+                {
+                    "date": 1690195315182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     <Flex>\n       <Text>SERVICES</Text>\n       <Text>ABOUT ME</Text>\n       <Text>WORKS</Text>\n-      <Text></Text>\n+      <Text>C</Text>\n     </Flex>\n       </Flex>\n       </Box>\n      Hey\n"
+                },
+                {
+                    "date": 1690195367876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     <Text>\n     Jamiu\n     </Text>\n     </Flex>\n-    <Flex ml={'20%'} border= >\n+    <Flex ml={'20%'} border={} >\n       <Text>SERVICES</Text>\n       <Text>ABOUT ME</Text>\n       <Text>WORKS</Text>\n       <Text>CONTACT ME</Text>\n"
+                }
+            ],
+            "date": 1690194649693,
+            "name": "Commit-0",
+            "content": "import { useState } from 'react'\nimport reactLogo from './assets/react.svg'\nimport viteLogo from '/vite.svg'\nimport './App.css'\n\nfunction App() {\n  const [count, setCount] = useState(0)\n\n  return (\n  <Box>\n    <Flex\n  </Box>\n  )\n}\n\nexport default App\n"
+        }
+    ]
+}

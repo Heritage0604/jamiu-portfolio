@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/hoc/SectionWrapper.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1690207969102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690208174445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n import { styles } from \"../styles\";\r\n import { staggerContainer } from \"../utils/motion\";\r\n \r\n-const SectionWrapper = (Component, idName) =>\r\n+const StarWrapper = (Component, idName) =>\r\n   function HOC() {\r\n     return (\r\n       <motion.section\r\n         variants={staggerContainer()}\r\n"
+                }
+            ],
+            "date": 1690207969102,
+            "name": "Commit-0",
+            "content": "import { motion } from \"framer-motion\";\r\n\r\nimport { styles } from \"../styles\";\r\nimport { staggerContainer } from \"../utils/motion\";\r\n\r\nconst SectionWrapper = (Component, idName) =>\r\n  function HOC() {\r\n    return (\r\n      <motion.section\r\n        variants={staggerContainer()}\r\n        initial='hidden'\r\n        whileInView='show'\r\n        viewport={{ once: true, amount: 0.25 }}\r\n        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}\r\n      >\r\n        <span className='hash-span' id={idName}>\r\n          &nbsp;\r\n        </span>\r\n \r\n\r\n        <Component />\r\n      </motion.section>\r\n    );\r\n  };\r\n\r\nexport default StarWrapper;"
+        }
+    ]
+}

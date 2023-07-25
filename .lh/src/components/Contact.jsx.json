@@ -1,0 +1,122 @@
+{
+    "sourceFile": "src/components/Contact.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 26,
+            "patches": [
+                {
+                    "date": 1690281267458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690281344931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,15 @@\n import React from 'react'\r\n+import { SectionWrapper } from '../hoc'\r\n+import { Tilt } from 'react-tilt'\r\n+import { motion } from 'framer-motion'\r\n+import { styles } from '../styles'\r\n+import {fadeIn,textVariant} from \"../utils/motion\"\r\n+import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'\r\n+import d6Logo from '../assets/d6.png'\r\n+import j2 from '../assets/j2.jpg'\r\n \r\n+\r\n const Contact = () => {\r\n   return (\r\n     <div>Contact</div>\r\n   )\r\n"
+                },
+                {
+                    "date": 1690281640897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \r\n \r\n const Contact = () => {\r\n   return (\r\n-    <div>Contact</div>\r\n+   \r\n   )\r\n }\r\n \r\n export default Contact\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690281652150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,29 @@\n \r\n \r\n const Contact = () => {\r\n   return (\r\n-   \r\n+     <Flex flexDirection={\"column\"} align={\"center\"} bg={\"#869af3ec\"}   width={\"100%\"}>\r\n+<Flex width={\"80%\"} mt={\"5vh\"}>\r\n+    <Text pr={\"30px\"} height={{bae:\"30px\",md:\"40px\"}} borderBottom={\"1px solid white\"} fontWeight={\"300\"} fontSize={{base:\"15px\",md:\"25px\"}}>ABOUT ME</Text>\r\n+</Flex>\r\n+<Flex justify={\"space-between\"} mt={\"3vh\"} width={\"80%\"} >\r\n+<Flex width={\"70%\"}><Text color={\"white\"}>\r\n+    Hi, my name is Jamiu Gbadamosi, an ambitious undergraduate pursuing Mechatronics engineering. From my early days in high school, I've had a natural affinity for organizing and interpreting data to uncover meaningful trends. My journey began with Excel sheets, where I realized the power of data analysis in making informed decisions.\r\n+\r\n+As I progressed in my studies, I was introduced to the fascinating world of Machine Learning, and that's when everything clicked for me. The potential to derive valuable insights from vast datasets ignited my passion for data analytics. Determined to follow my newfound calling, I decided to embark on a career in data analytics.\r\n+\r\n+Throughout my academic journey, I've honed my skills in SQL, Excel, and various data visualization tools, empowering me to transform raw data into actionable insights. Additionally, my background in Mechatronics engineering gives me a unique perspective on problem-solving and a knack for applying data-driven solutions to real-world challenges.\r\n+\r\n+I'm thrilled to leverage my analytical prowess and Machine Learning knowledge to help businesses unravel the hidden potential in their data. I am committed to delivering precise and impactful results that drive growth and enhance decision-making processes.\r\n+\r\n+Join me on this data-driven journey, and let's discover the true power of your data together\r\n+\r\n+    </Text></Flex>\r\n+<Flex display={{base:\"none\",md:\"flex\"}}><Image width={'300px'} src={j2}/></Flex>\r\n+</Flex>\r\n+<Flex display={{base:\"flex\",md:\"none\"}}><Image width={'250px'} src={j2}/></Flex>\r\n+   </Flex>\r\n   )\r\n }\r\n \r\n export default Contact\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690281665084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,5 +34,5 @@\n    </Flex>\r\n   )\r\n }\r\n \r\n-export default Contact\n\\ No newline at end of file\n+export default SectionWrapper(About,\"about\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690281670926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,5 +34,5 @@\n    </Flex>\r\n   )\r\n }\r\n \r\n-export default SectionWrapper(About,\"about\")\n\\ No newline at end of file\n+export default SectionWrapper(Contact,\"about\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690282050724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,14 @@\n \r\n const Contact = () => {\r\n   return (\r\n      <Flex flexDirection={\"column\"} align={\"center\"} bg={\"#869af3ec\"}   width={\"100%\"}>\r\n+        <Flex align={\"center\"} flexDirection={\"column\"}>\r\n+      <Flex b  width={\"60%\"}>\r\n+      <Text fontSize={{base:\"15px\",md:\"18px\"}} color={\"gray.900\"} borderBottom={\"1px solid#b0aea9\"} pr={\"25px\"} height={\"30px\"} >\r\n+        SERVICES\r\n+    </Text>\r\n+  </Flex>\r\n <Flex width={\"80%\"} mt={\"5vh\"}>\r\n     <Text pr={\"30px\"} height={{bae:\"30px\",md:\"40px\"}} borderBottom={\"1px solid white\"} fontWeight={\"300\"} fontSize={{base:\"15px\",md:\"25px\"}}>ABOUT ME</Text>\r\n </Flex>\r\n <Flex justify={\"space-between\"} mt={\"3vh\"} width={\"80%\"} >\r\n@@ -34,5 +40,5 @@\n    </Flex>\r\n   )\r\n }\r\n \r\n-export default SectionWrapper(Contact,\"about\")\n\\ No newline at end of file\n+export default SectionWrapper(Contact,\"contact\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690282060978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,35 +10,10 @@\n \r\n \r\n const Contact = () => {\r\n   return (\r\n-     <Flex flexDirection={\"column\"} align={\"center\"} bg={\"#869af3ec\"}   width={\"100%\"}>\r\n-        <Flex align={\"center\"} flexDirection={\"column\"}>\r\n-      <Flex b  width={\"60%\"}>\r\n-      <Text fontSize={{base:\"15px\",md:\"18px\"}} color={\"gray.900\"} borderBottom={\"1px solid#b0aea9\"} pr={\"25px\"} height={\"30px\"} >\r\n-        SERVICES\r\n-    </Text>\r\n+  <Flex>\r\n+    \r\n   </Flex>\r\n-<Flex width={\"80%\"} mt={\"5vh\"}>\r\n-    <Text pr={\"30px\"} height={{bae:\"30px\",md:\"40px\"}} borderBottom={\"1px solid white\"} fontWeight={\"300\"} fontSize={{base:\"15px\",md:\"25px\"}}>ABOUT ME</Text>\r\n-</Flex>\r\n-<Flex justify={\"space-between\"} mt={\"3vh\"} width={\"80%\"} >\r\n-<Flex width={\"70%\"}><Text color={\"white\"}>\r\n-    Hi, my name is Jamiu Gbadamosi, an ambitious undergraduate pursuing Mechatronics engineering. From my early days in high school, I've had a natural affinity for organizing and interpreting data to uncover meaningful trends. My journey began with Excel sheets, where I realized the power of data analysis in making informed decisions.\r\n-\r\n-As I progressed in my studies, I was introduced to the fascinating world of Machine Learning, and that's when everything clicked for me. The potential to derive valuable insights from vast datasets ignited my passion for data analytics. Determined to follow my newfound calling, I decided to embark on a career in data analytics.\r\n-\r\n-Throughout my academic journey, I've honed my skills in SQL, Excel, and various data visualization tools, empowering me to transform raw data into actionable insights. Additionally, my background in Mechatronics engineering gives me a unique perspective on problem-solving and a knack for applying data-driven solutions to real-world challenges.\r\n-\r\n-I'm thrilled to leverage my analytical prowess and Machine Learning knowledge to help businesses unravel the hidden potential in their data. I am committed to delivering precise and impactful results that drive growth and enhance decision-making processes.\r\n-\r\n-Join me on this data-driven journey, and let's discover the true power of your data together\r\n-\r\n-    </Text></Flex>\r\n-<Flex display={{base:\"none\",md:\"flex\"}}><Image width={'300px'} src={j2}/></Flex>\r\n-</Flex>\r\n-<Flex display={{base:\"flex\",md:\"none\"}}><Image width={'250px'} src={j2}/></Flex>\r\n-   </Flex>\r\n-  )\r\n }\r\n \r\n export default SectionWrapper(Contact,\"contact\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690282068283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,10 @@\n \r\n const Contact = () => {\r\n   return (\r\n   <Flex>\r\n-    \r\n+    <\r\n   </Flex>\r\n+  \r\n }\r\n \r\n export default SectionWrapper(Contact,\"contact\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690282076096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n \r\n const Contact = () => {\r\n   return (\r\n   <Flex>\r\n-    <\r\n+    <Flex><Text></Text></Flex>\r\n   </Flex>\r\n-  \r\n+  )\r\n }\r\n \r\n export default SectionWrapper(Contact,\"contact\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690282091799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n const Contact = () => {\r\n   return (\r\n   <Flex>\r\n-    <Flex><Text></Text></Flex>\r\n+    <Flex><Text BORDER={\"1px solid\"}>CONTACT</Text></Flex>\r\n   </Flex>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1690282100884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n const Contact = () => {\r\n   return (\r\n   <Flex>\r\n-    <Flex><Text BORDER={\"1px solid\"}>CONTACT</Text></Flex>\r\n+    <Flex><Text Brder={\"1px solid\"}>CONTACT</Text></Flex>\r\n   </Flex>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1690282120300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n \r\n \r\n const Contact = () => {\r\n   return (\r\n-  <Flex>\r\n-    <Flex><Text Brder={\"1px solid\"}>CONTACT</Text></Flex>\r\n+  <Flex width={}>\r\n+    <Flex><Text border={\"1px solid\"}>CONTACT</Text></Flex>\r\n   </Flex>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1690282128303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \r\n \r\n const Contact = () => {\r\n   return (\r\n-  <Flex width={}>\r\n+  <Flex width={\"100%\"}>\r\n     <Flex><Text border={\"1px solid\"}>CONTACT</Text></Flex>\r\n   </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690282135393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \r\n \r\n const Contact = () => {\r\n   return (\r\n-  <Flex width={\"100%\"}>\r\n+  <Flex width={\"100%\"} border={\"1px solid\"}>\r\n     <Flex><Text border={\"1px solid\"}>CONTACT</Text></Flex>\r\n   </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690282145344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \r\n \r\n const Contact = () => {\r\n   return (\r\n-  <Flex width={\"100%\"} border={\"1px solid\"}>\r\n+  <Flex width={\"100%\"} justify={'center'} border={\"1px solid green\"}>\r\n     <Flex><Text border={\"1px solid\"}>CONTACT</Text></Flex>\r\n   </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690282153298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n const Contact = () => {\r\n   return (\r\n   <Flex width={\"100%\"} justify={'center'} border={\"1px solid green\"}>\r\n-    <Flex><Text border={\"1px solid\"}>CONTACT</Text></Flex>\r\n+    <Flex width={\"60%\"}><Text border={\"1px solid\"}>CONTACT</Text></Flex>\r\n   </Flex>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1690282173947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,23 @@\n \r\n const Contact = () => {\r\n   return (\r\n   <Flex width={\"100%\"} justify={'center'} border={\"1px solid green\"}>\r\n-    <Flex width={\"60%\"}><Text border={\"1px solid\"}>CONTACT</Text></Flex>\r\n+   <Flex align={\"center\"} flexDirection={\"column\"}>\r\n+      <Flex b  width={\"60%\"}>\r\n+      <Text fontSize={{base:\"15px\",md:\"18px\"}} color={\"gray.900\"} borderBottom={\"1px solid#b0aea9\"} pr={\"25px\"} height={\"30px\"} >\r\n+        SERVICES\r\n+    </Text>\r\n   </Flex>\r\n+  <Flex width={\"60%\"} mt={\"10px\"}>\r\n+<Text  color={\"#4e4e4c\"}>\r\n+   Welcome to my freelance data analyst portfolio! I am a highly skilled data analyst with a passion for unraveling the stories hidden within data. With expertise in SQL, Excel, Google Sheets, and Power BI, I offer comprehensive data analysis services to help businesses make informed decisions and drive success.\r\n+As a professional data analyst, I thrive on turning raw data into valuable insights.With Python, SQL, EXCEL/Google sheets and Power BI, I can efficiently extract, manipulate, and analyze large datasets, ensuring Data accuracy and completeness. \r\n+ \r\n+</Text>\r\n+  </Flex>\r\n+</Flex>\r\n+  </Flex>\r\n   )\r\n }\r\n \r\n export default SectionWrapper(Contact,\"contact\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690282183543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \r\n \r\n const Contact = () => {\r\n   return (\r\n-  <Flex width={\"100%\"} justify={'center'} border={\"1px solid green\"}>\r\n+  <Flex width={\"100%\"} justify={'center'}>\r\n    <Flex align={\"center\"} flexDirection={\"column\"}>\r\n       <Flex b  width={\"60%\"}>\r\n       <Text fontSize={{base:\"15px\",md:\"18px\"}} color={\"gray.900\"} borderBottom={\"1px solid#b0aea9\"} pr={\"25px\"} height={\"30px\"} >\r\n         SERVICES\r\n"
+                },
+                {
+                    "date": 1690282193559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   <Flex width={\"100%\"} justify={'center'}>\r\n    <Flex align={\"center\"} flexDirection={\"column\"}>\r\n       <Flex b  width={\"60%\"}>\r\n       <Text fontSize={{base:\"15px\",md:\"18px\"}} color={\"gray.900\"} borderBottom={\"1px solid#b0aea9\"} pr={\"25px\"} height={\"30px\"} >\r\n-        SERVICES\r\n+        CONSTCT\r\n     </Text>\r\n   </Flex>\r\n   <Flex width={\"60%\"} mt={\"10px\"}>\r\n <Text  color={\"#4e4e4c\"}>\r\n"
+                },
+                {
+                    "date": 1690282722607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,16 +14,16 @@\n   <Flex width={\"100%\"} justify={'center'}>\r\n    <Flex align={\"center\"} flexDirection={\"column\"}>\r\n       <Flex b  width={\"60%\"}>\r\n       <Text fontSize={{base:\"15px\",md:\"18px\"}} color={\"gray.900\"} borderBottom={\"1px solid#b0aea9\"} pr={\"25px\"} height={\"30px\"} >\r\n-        CONSTCT\r\n+        CONTACT\r\n     </Text>\r\n   </Flex>\r\n   <Flex width={\"60%\"} mt={\"10px\"}>\r\n <Text  color={\"#4e4e4c\"}>\r\n-   Welcome to my freelance data analyst portfolio! I am a highly skilled data analyst with a passion for unraveling the stories hidden within data. With expertise in SQL, Excel, Google Sheets, and Power BI, I offer comprehensive data analysis services to help businesses make informed decisions and drive success.\r\n-As a professional data analyst, I thrive on turning raw data into valuable insights.With Python, SQL, EXCEL/Google sheets and Power BI, I can efficiently extract, manipulate, and analyze large datasets, ensuring Data accuracy and completeness. \r\n- \r\n+  Claudia\r\n+\r\n+As data scientist, I know exactly how you can use data optimally within your business. Based on your objectives, we will make a plan to reach the right insight.\r\n </Text>\r\n   </Flex>\r\n </Flex>\r\n   </Flex>\r\n"
+                },
+                {
+                    "date": 1690282735283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n     </Text>\r\n   </Flex>\r\n   <Flex width={\"60%\"} mt={\"10px\"}>\r\n <Text  color={\"#4e4e4c\"}>\r\n-  Claudia\r\n-\r\n+Jamiu\r\n+<br/>\r\n As data scientist, I know exactly how you can use data optimally within your business. Based on your objectives, we will make a plan to reach the right insight.\r\n </Text>\r\n   </Flex>\r\n </Flex>\r\n"
+                },
+                {
+                    "date": 1690282742144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n   <Flex width={\"60%\"} mt={\"10px\"}>\r\n <Text  color={\"#4e4e4c\"}>\r\n Jamiu\r\n <br/>\r\n+<br\r\n As data scientist, I know exactly how you can use data optimally within your business. Based on your objectives, we will make a plan to reach the right insight.\r\n </Text>\r\n   </Flex>\r\n </Flex>\r\n"
+                },
+                {
+                    "date": 1690282867395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,8 @@\n   <Flex width={\"60%\"} mt={\"10px\"}>\r\n <Text  color={\"#4e4e4c\"}>\r\n Jamiu\r\n <br/>\r\n-<br\r\n As data scientist, I know exactly how you can use data optimally within your business. Based on your objectives, we will make a plan to reach the right insight.\r\n </Text>\r\n   </Flex>\r\n </Flex>\r\n"
+                },
+                {
+                    "date": 1690282878585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,34 @@\n+import React from 'react'\r\n+import { SectionWrapper } from '../hoc'\r\n+import { Tilt } from 'react-tilt'\r\n+import { motion } from 'framer-motion'\r\n+import { styles } from '../styles'\r\n+import {fadeIn,textVariant} from \"../utils/motion\"\r\n+import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'\r\n+import d6Logo from '../assets/d6.png'\r\n+import j2 from '../assets/j2.jpg'\r\n+\r\n+\r\n+const Contact = () => {\r\n+  return (\r\n+  <Flex width={\"100%\"} justify={'center'}>\r\n+   <Flex align={\"center\"} flexDirection={\"column\"}>\r\n+      <Flex b  width={\"60%\"}>\r\n+      <Text fontSize={{base:\"15px\",md:\"18px\"}} color={\"gray.900\"} borderBottom={\"1px solid#b0aea9\"} pr={\"25px\"} height={\"30px\"} >\r\n+        CONTACT\r\n+    </Text>\r\n+  </Flex>\r\n+  <Flex width={\"60%\"} mt={\"10px\"}>\r\n+<Text  color={\"#4e4e4c\"}>\r\n+Jamiu\r\n+<br/>\r\n+<br/>\r\n+As data scientist, I know exactly how you can use data optimally within your business. Based on your objectives, we will make a plan to reach the right insight.\r\n+</Text>\r\n+  </Flex>\r\n+</Flex>\r\n+  </Flex>\r\n+  )\r\n+}\r\n+\r\n+export default SectionWrapper(Contact,\"contact\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690282911295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     </Text>\r\n   </Flex>\r\n   <Flex width={\"60%\"} mt={\"10px\"}>\r\n <Text  color={\"#4e4e4c\"}>\r\n-<Text></Text>\r\n+<Text>Jamiu</Text>\r\n <br/>\r\n <br/>\r\n As data scientist, I know exactly how you can use data optimally within your business. Based on your objectives, we will make a plan to reach the right insight.\r\n </Text>\r\n"
+                },
+                {
+                    "date": 1690282972252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,34 @@\n+import React from 'react'\r\n+import { SectionWrapper } from '../hoc'\r\n+import { Tilt } from 'react-tilt'\r\n+import { motion } from 'framer-motion'\r\n+import { styles } from '../styles'\r\n+import {fadeIn,textVariant} from \"../utils/motion\"\r\n+import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'\r\n+import d6Logo from '../assets/d6.png'\r\n+import j2 from '../assets/j2.jpg'\r\n+\r\n+\r\n+const Contact = () => {\r\n+  return (\r\n+  <Flex width={\"100%\"} justify={'center'}>\r\n+   <Flex align={\"center\"} flexDirection={\"column\"}>\r\n+      <Flex b  width={\"60%\"}>\r\n+      <Text fontSize={{base:\"15px\",md:\"18px\"}} color={\"gray.900\"} borderBottom={\"1px solid#b0aea9\"} pr={\"25px\"} height={\"30px\"} >\r\n+        CONTACT\r\n+    </Text>\r\n+  </Flex>\r\n+  <Flex width={\"60%\"} mt={\"10px\"}>\r\n+<Text fontSize={\"13px\"}  color={\"#4e4e4c\"}>\r\n+<Text>Jamiu</Text>\r\n+\r\n+<br/>\r\n+As data scientist, I know exactly how you can use data optimally within your business. Based on your objectives, we will make a plan to reach the right insight.\r\n+</Text>\r\n+  </Flex>\r\n+</Flex>\r\n+  </Flex>\r\n+  )\r\n+}\r\n+\r\n+export default SectionWrapper(Contact,\"contact\")\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1690281267458,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nconst Contact = () => {\r\n  return (\r\n    <div>Contact</div>\r\n  )\r\n}\r\n\r\nexport default Contact"
+        }
+    ]
+}

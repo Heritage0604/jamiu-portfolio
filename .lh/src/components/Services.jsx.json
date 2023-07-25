@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/components/Services.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1690208080357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690209304075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import React from 'react'\r\n+import { SectionWrapper } from '../hoc'\r\n \r\n const Services = () => {\r\n   return (\r\n     <div>Services</div>\r\n"
+                },
+                {
+                    "date": 1690209320563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n     <div>Services</div>\r\n   )\r\n }\r\n \r\n-export default Services\n\\ No newline at end of file\n+export defaultSectionWrapper(About,\"about\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690209331141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n     <div>Services</div>\r\n   )\r\n }\r\n \r\n-export defaultSectionWrapper(About,\"about\")\n\\ No newline at end of file\n+export default SectionWrapper(Service,\"about\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690209337100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n     <div>Services</div>\r\n   )\r\n }\r\n \r\n-export default SectionWrapper(Service,\"about\")\n\\ No newline at end of file\n+export default SectionWrapper(Service,\"service\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690209365458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import React from 'react'\r\n import { SectionWrapper } from '../hoc'\r\n+v\r\n \r\n const Services = () => {\r\n   return (\r\n     <div>Services</div>\r\n"
+                },
+                {
+                    "date": 1690209492302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Services = () => {\r\n   return (\r\n    <Flex>\r\n-    <Yexy></Yexy>\r\n+    <Yexy>\r\n    </Flex>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1690209700015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Services = () => {\r\n   return (\r\n    <Flex>\r\n-    <Text color={\"gray.900\"} borderBottom={} height={\"5px\"} >\r\n+    <Text color={\"gray.900\"} borderBottom={\"\"} height={\"5px\"} >\r\n         SERVICES\r\n     </Text>\r\n    </Flex>\r\n   )\r\n"
+                }
+            ],
+            "date": 1690208080357,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nconst Services = () => {\r\n  return (\r\n    <div>Services</div>\r\n  )\r\n}\r\n\r\nexport default Services"
+        }
+    ]
+}
