@@ -1,0 +1,118 @@
+{
+    "sourceFile": "src/components/PageContent.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 25,
+            "patches": [
+                {
+                    "date": 1690360058404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690360067062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,10 @@\n import { Flex } from '@chakra-ui/react'\r\n import React from 'react'\r\n \r\n-type Props = {\r\n-  children:any\r\n-}\r\n \r\n-const PageContent:React.FC<Props> = ({children}) => {\r\n+\r\n+const PageContent:= ({children}) => {\r\n     \r\n   return (\r\n     <Flex justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n         <Flex width=\"100%\"  justify=\"center\" >\r\n"
+                },
+                {
+                    "date": 1690360073043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react'\r\n \r\n \r\n \r\n-const PageContent:= ({children}) => {\r\n+const PageContent= ({children}) => {\r\n     \r\n   return (\r\n     <Flex justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n         <Flex width=\"100%\"  justify=\"center\" >\r\n"
+                },
+                {
+                    "date": 1690360082835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const PageContent= ({children}) => {\r\n     \r\n   return (\r\n-    <Flex justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n+    <Flex flexDirection={\"column\"} justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n         <Flex width=\"100%\"  justify=\"center\" >\r\n             {/* left hand side */}\r\n             <Flex    direction={\"column\"} width={{base:\"20%\",md:\"15%\"}}  mr={{base:5,md:6}}>{children && children[0 as keyof typeof children]}</Flex>\r\n             {/* right hand side */}\r\n"
+                },
+                {
+                    "date": 1690360168455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   return (\r\n     <Flex flexDirection={\"column\"} justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n         <Flex width=\"100%\"  justify=\"center\" >\r\n             {/* left hand side */}\r\n-            <Flex    direction={\"column\"} width={{base:\"20%\",md:\"15%\"}}  mr={{base:5,md:6}}>{children && children[0 as keyof typeof children]}</Flex>\r\n+            <Flex    direction={\"column\"} width={{base:\"20%\",md:\"15%\"}}  mr={{base:5,md:6}}>{children && children[0 children]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex   direction={\"column\"}  width={{base:\"75%\",md:\"75%\"}}  flexGrow={1}>{children && children[1 as keyof typeof children]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n"
+                },
+                {
+                    "date": 1690360176871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n   return (\r\n     <Flex flexDirection={\"column\"} justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n         <Flex width=\"100%\"  justify=\"center\" >\r\n             {/* left hand side */}\r\n-            <Flex    direction={\"column\"} width={{base:\"20%\",md:\"15%\"}}  mr={{base:5,md:6}}>{children && children[0 children]}</Flex>\r\n+            <Flex    direction={\"column\"} width={{base:\"20%\",md:\"15%\"}}  mr={{base:5,md:6}}>{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n-            <Flex   direction={\"column\"}  width={{base:\"75%\",md:\"75%\"}}  flexGrow={1}>{children && children[1 as keyof typeof children]}</Flex>\r\n+            <Flex   direction={\"column\"}  width={{base:\"75%\",md:\"75%\"}}  flexGrow={1}>{children && children[1 ]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690360185644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         <Flex width=\"100%\"  justify=\"center\" >\r\n             {/* left hand side */}\r\n             <Flex    direction={\"column\"} width={{base:\"20%\",md:\"15%\"}}  mr={{base:5,md:6}}>{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n-            <Flex   direction={\"column\"}  width={{base:\"75%\",md:\"75%\"}}  flexGrow={1}>{children && children[1 ]}</Flex>\r\n+            <Flex     width={{base:\"75%\",md:\"75%\"}}  flexGrow={1}>{children && children[1]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690360202252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   return (\r\n     <Flex flexDirection={\"column\"} justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n         <Flex width=\"100%\"  justify=\"center\" >\r\n             {/* left hand side */}\r\n-            <Flex    direction={\"column\"} width={{base:\"20%\",md:\"15%\"}}  mr={{base:5,md:6}}>{children && children[0]}</Flex>\r\n+            <Flex    width={}  mr={{base:5,md:6}}>{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={{base:\"75%\",md:\"75%\"}}  flexGrow={1}>{children && children[1]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n"
+                },
+                {
+                    "date": 1690360210489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n   return (\r\n     <Flex flexDirection={\"column\"} justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n         <Flex width=\"100%\"  justify=\"center\" >\r\n             {/* left hand side */}\r\n-            <Flex    width={}  mr={{base:5,md:6}}>{children && children[0]}</Flex>\r\n+            <Flex    width={'100%'}  mr={{base:5,md:6}}>{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n-            <Flex     width={{base:\"75%\",md:\"75%\"}}  flexGrow={1}>{children && children[1]}</Flex>\r\n+            <Flex     width={100%}  flexGrow={1}>{children && children[1]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690360218569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,9 @@\n     <Flex flexDirection={\"column\"} justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n         <Flex width=\"100%\"  justify=\"center\" >\r\n             {/* left hand side */}\r\n             <Flex    width={'100%'}  mr={{base:5,md:6}}>{children && children[0]}</Flex>\r\n-            {/* right hand side */}\r\n-            <Flex     width={100%}  flexGrow={1}>{children && children[1]}</Flex>\r\n+            {/* right hand side */}>{children && children[1]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690360224179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,10 @@\n     <Flex flexDirection={\"column\"} justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n         <Flex width=\"100%\"  justify=\"center\" >\r\n             {/* left hand side */}\r\n             <Flex    width={'100%'}  mr={{base:5,md:6}}>{children && children[0]}</Flex>\r\n-            {/* right hand side */}>{children && children[1]}</Flex>\r\n+            {/* right hand side */}\r\n+            <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690360249550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n const PageContent= ({children}) => {\r\n     \r\n   return (\r\n     <Flex flexDirection={\"column\"} justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n-        <Flex width=\"100%\"  justify=\"center\" >\r\n+        <Flex width=\"100%\" flexDirection={\"column\"}  justify=\"center\" >\r\n             {/* left hand side */}\r\n-            <Flex    width={'100%'}  mr={{base:5,md:6}}>{children && children[0]}</Flex>\r\n+            <Flex    width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n"
+                },
+                {
+                    "date": 1690360255120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const PageContent= ({children}) => {\r\n     \r\n   return (\r\n-    <Flex flexDirection={\"column\"} justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n+    <Flex flexDirection={\"column\"} justify={\"center\"}   bg={\"gray.200\"} >\r\n         <Flex width=\"100%\" flexDirection={\"column\"}  justify=\"center\" >\r\n             {/* left hand side */}\r\n             <Flex    width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n"
+                },
+                {
+                    "date": 1690360413471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,11 @@\n             {/* left hand side */}\r\n             <Flex    width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n+            <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n+            <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n+            <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690360420028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n             {/* left hand side */}\r\n             <Flex    width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n+            <Flex     width={'100%'}  >{children && children[2]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n-            <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690360427404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n             <Flex    width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[2]}</Flex>\r\n-            <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n-            <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n+            <Flex     width={'100%'}  >{children && children[3]}</Flex>\r\n+            <Flex     width={'100%'}  >{children && children[4]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690360442785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   return (\r\n     <Flex flexDirection={\"column\"} justify={\"center\"}   bg={\"gray.200\"} >\r\n         <Flex width=\"100%\" flexDirection={\"column\"}  justify=\"center\" >\r\n             {/* left hand side */}\r\n-            <Flex    width={'100%'}  >{children && children[0]}</Flex>\r\n+            <Flex  flexDirection={\"column\"}   width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[2]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[3]}</Flex>\r\n"
+                },
+                {
+                    "date": 1690360467187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const PageContent= ({children}) => {\r\n     \r\n   return (\r\n-    <Flex flexDirection={\"column\"} justify={\"center\"}   bg={\"gray.200\"} >\r\n+    <Flex flexDirection={\"column\"}   bg={\"gray.200\"} >\r\n         <Flex width=\"100%\" flexDirection={\"column\"}  justify=\"center\" >\r\n             {/* left hand side */}\r\n             <Flex  flexDirection={\"column\"}   width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n"
+                },
+                {
+                    "date": 1690360474251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const PageContent= ({children}) => {\r\n     \r\n   return (\r\n-    <Flex flexDirection={\"column\"}   bg={\"gray.200\"} >\r\n+    <Flex flexDirection={\"column\"} width={\"100vw\"}  bg={\"gray.200\"} >\r\n         <Flex width=\"100%\" flexDirection={\"column\"}  justify=\"center\" >\r\n             {/* left hand side */}\r\n             <Flex  flexDirection={\"column\"}   width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n"
+                },
+                {
+                    "date": 1690360490701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[2]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[3]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[4]}</Flex>\r\n+            <Flex     width={'100%'}  >{children && children[4]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690360513649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,17 +6,17 @@\n const PageContent= ({children}) => {\r\n     \r\n   return (\r\n     <Flex flexDirection={\"column\"} width={\"100vw\"}  bg={\"gray.200\"} >\r\n-        <Flex width=\"100%\" flexDirection={\"column\"}  justify=\"center\" >\r\n+        <Flex border={\"1px solid\"} width=\"100%\" flexDirection={\"column\"}  justify=\"center\" >\r\n             {/* left hand side */}\r\n             <Flex  flexDirection={\"column\"}   width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[2]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[3]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[4]}</Flex>\r\n-            <Flex     width={'100%'}  >{children && children[4]}</Flex>\r\n+            <Flex     width={'100%'}  >{children && children[5]}</Flex>\r\n         </Flex>\r\n     </Flex>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1690360523367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n const PageContent= ({children}) => {\r\n     \r\n   return (\r\n     <Flex flexDirection={\"column\"} width={\"100vw\"}  bg={\"gray.200\"} >\r\n-        <Flex border={\"1px solid\"} width=\"100%\" flexDirection={\"column\"}  justify=\"center\" >\r\n+        <Flex border={\"2px solid\"} width=\"100%\" flexDirection={\"column\"}  justify=\"center\" >\r\n             {/* left hand side */}\r\n             <Flex  flexDirection={\"column\"}   width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n"
+                },
+                {
+                    "date": 1690360611439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n const PageContent= ({children}) => {\r\n     \r\n   return (\r\n     <Flex flexDirection={\"column\"} width={\"100vw\"}  bg={\"gray.200\"} >\r\n-        <Flex border={\"2px solid\"} width=\"100%\" flexDirection={\"column\"}  justify=\"center\" >\r\n+        <Flex  width=\"100%\" flexDirection={\"column\"}  justify=\"center\" >\r\n             {/* left hand side */}\r\n             <Flex  flexDirection={\"column\"}   width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n"
+                },
+                {
+                    "date": 1690360680466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n             {/* left hand side */}\r\n             <Flex  flexDirection={\"column\"}   width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n-            <Flex     width={'100%'}  >{children && children[2]}</Flex>\r\n+            <Flex justify={\"center\"}     width={'100%'}  >{children && children[2]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[3]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[4]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[5]}</Flex>\r\n         </Flex>\r\n"
+                },
+                {
+                    "date": 1690360736749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n             {/* left hand side */}\r\n             <Flex  flexDirection={\"column\"}   width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n-            <Flex justify={\"center\"}     width={'100%'}  >{children && children[2]}</Flex>\r\n+            <Flex border={\"1px solid red\"} justify={\"center\"}     width={'100%'}  >{children && children[2]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[3]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[4]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[5]}</Flex>\r\n         </Flex>\r\n"
+                },
+                {
+                    "date": 1690360758706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n             {/* left hand side */}\r\n             <Flex  flexDirection={\"column\"}   width={'100%'}  >{children && children[0]}</Flex>\r\n             {/* right hand side */}\r\n             <Flex     width={'100%'}  >{children && children[1]}</Flex>\r\n-            <Flex border={\"1px solid red\"} justify={\"center\"}     width={'100%'}  >{children && children[2]}</Flex>\r\n+            <Flex border={\"1px solid red\"} align={\"center\"} justify={\"center\"}     width={'100%'}  >{children && children[2]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[3]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[4]}</Flex>\r\n             <Flex     width={'100%'}  >{children && children[5]}</Flex>\r\n         </Flex>\r\n"
+                }
+            ],
+            "date": 1690360058404,
+            "name": "Commit-0",
+            "content": "import { Flex } from '@chakra-ui/react'\r\nimport React from 'react'\r\n\r\ntype Props = {\r\n  children:any\r\n}\r\n\r\nconst PageContent:React.FC<Props> = ({children}) => {\r\n    \r\n  return (\r\n    <Flex justify={\"center\"}  padding={\"16px 16px\"} bg={\"gray.200\"} >\r\n        <Flex width=\"100%\"  justify=\"center\" >\r\n            {/* left hand side */}\r\n            <Flex    direction={\"column\"} width={{base:\"20%\",md:\"15%\"}}  mr={{base:5,md:6}}>{children && children[0 as keyof typeof children]}</Flex>\r\n            {/* right hand side */}\r\n            <Flex   direction={\"column\"}  width={{base:\"75%\",md:\"75%\"}}  flexGrow={1}>{children && children[1 as keyof typeof children]}</Flex>\r\n        </Flex>\r\n    </Flex>\r\n  )\r\n}\r\n\r\nexport default PageContent"
+        }
+    ]
+}
