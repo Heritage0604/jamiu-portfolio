@@ -16,7 +16,7 @@ import { motion } from 'framer-motion'
 
 const Contact = () => {
   return (
-    <motion.div variants={textVariant()}>
+    
   <Flex color={"#4e4e4c"}  flexDirection={"column"} width={"100%"} justify={'center'}>
    <Flex align={"center"} flexDirection={"column"}>
       <Flex b  width={"80%"}>
@@ -71,7 +71,7 @@ As data scientist, I know exactly how you can use data optimally within your bus
 <Flex mt={"2vh"} justify={"center"} mb={"0vh"} height={"20vh"} bg={"#627be9eb"} >
 <Flex mt={"3vh"} flexDirection={"column"}  width={"80%"}>
     <Text mb={"3vh"} width={{base:"50%"}} fontSize={{base:"20px"}}  color={"black"}   pr={"20px"} borderBottom={'1px solid white'} >LINKEDIN</Text>
-    <Text fontSize={"15px"} color={"black"}   >we can get in touch via <Link textAlign={"center"} isExternal href={"https://www.linkedin.com/in/jamiu-gbadamosi-ba342326a"} _hover={{color:"blue"}} color={"blue"}>LinkedIn  <Icon color={"blue"} ml={"0px"} as={BsLinkedin}/></Link>
+    <Text fontSize={{base:"13px",md:"15px"}} color={"black"}   >we can get in touch via <Link textAlign={"center"} isExternal href={"https://www.linkedin.com/in/jamiu-gbadamosi-ba342326a"} _hover={{color:"blue"}} color={"blue"}>LinkedIn  <Icon color={"blue"} ml={"0px"} as={BsLinkedin}/></Link>
     </Text>
 
 </Flex>
@@ -87,14 +87,14 @@ As data scientist, I know exactly how you can use data optimally within your bus
         Location:
 Lagos region (Nigeria) or remote work
     </Text>
- <Flex>
-       <Text mr="3px">Phone Number:</Text>
-       <Link color={"blue"} _hover={{color:"blue"}} href="tel:+234 901 851 7578">+234 901 851 7578</Link>
+ <Flex mt={"2px"}>
+       <Text fontSize={"13px"} mr="3px">Phone Number:</Text>
+       <Link fontSize={"13px"} color={"blue"} _hover={{color:"blue"}} href="tel:+234 901 851 7578">+234 901 851 7578</Link>
  </Flex>
  </Flex>
  <Flex justify={"center"}  mt={"6vh"}>
     <Flex >
-        <Text color={"black"} fontSize={{base:"15px"}}> &#169; 2023 Jamiu Data Analysis</Text>
+        <Text color={"black"} mb={"10px"} fontSize={{base:"15px"}}> &#169; 2023 Jamiu Data Analysis</Text>
     </Flex>
 </Flex>
 </Flex>
@@ -102,7 +102,7 @@ Lagos region (Nigeria) or remote work
 </Flex>
 
   </Flex>
-  </motion.div>
+ 
   )
 }
 

@@ -10,18 +10,17 @@ import j2 from '../assets/j2.jpg'
 
 const Contact2 = () => {
   return (
-     <motion.div variants={textVariant()}>
-    <Flex mt={"-1vh"} flexDirection={"column"} align={"center"} bg={"#627be9eb"}   width={"100%"}>
-<Flex width={"80%"} mt={"5vh"}>
-    <Text pr={"30px"} height={{bae:"30px",md:"40px"}} borderBottom={"1px solid white"} fontWeight={"300"} fontSize={{base:"15px",md:"25px"}}>WONDERING HOW YOU CAN MAKE THE BEST DECISIONS USING YOUR DATA?</Text>
+     
+    <Flex mt={"-10vh"} flexDirection={"column"} align={"center"} bg={"#627be9eb"}   width={"100%"}>
+<Flex  width={"80vw"} mt={"5vh"}>
+    <Text ml={"20px"}  mr={"10%"} pr={"30px"} height={{bae:"30px",md:"40px"}} borderBottom={"1px solid white"} fontWeight={"300"} fontSize={{base:"15px",md:"25px"}}>WONDERING HOW YOU CAN MAKE THE BEST DECISIONS USING YOUR DATA?</Text>
 </Flex>
 <Flex  width={"60%"} justify={"center"}>
-  <Link href='#contact' p={"10px 20px"} border={"1px solid white"} textAlign={"center"} width={"60%"} mb={"2vh"} mt={"2vh"} bg={"white"} > Get in Touch</Link>
+  <Link href='#contact' p={"10px 20px"} border={"1px solid white"} textAlign={"center"} width={{base:"80%"}} mb={"2vh"} mt={"2vh"} bg={"white"} > Get in Touch</Link>
 </Flex>
 
    </Flex>
-   </motion.div>
-  )
+   )
 }
 
 export default  SectionWrapper(Contact2,"contact2")

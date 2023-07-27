@@ -1,5 +1,5 @@
 import { useState,useEffect } from 'react'
-import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'
+import { Box,Grid,SimpleGrid, Flex,Image,Icon,Text } from '@chakra-ui/react'
 import About from './components/About'
 import Navbar from './components/Navbar'
 import Services from './components/Services'
@@ -24,18 +24,22 @@ useEffect(() => {
     });
 }, []);
   return (
-    
-    <Flex flexDirection={"column"}> 
+    <>
+  <Flex bg={"gray.200"} align={'center'} width={"100%"} overflowX={'hidden'} flexDirection={"column"}>
     <Icon display={showTopBtn} onClick={onTop} cursor={'pointer'} bg={"blue.200"} borderRadius={"5px"}
      height={"30px"} width={"30px"} position={"fixed"} right={"30px"} bottom={"30px"}
       zIndex={20} fontSize={"18px"} border={"1px solid white"} as={AiOutlineArrowUp}/>
     <Navbar/>
-    <Services/>
+
+    <Flex justify={"center"}>
+       <Services/>
+    </Flex>
  <About/>
  <Contact2/>
- {/* <Work/> */}
+ <Work/>
  <Contact/>
-      </Flex>
+ </Flex>
+      </>
     
     
   )

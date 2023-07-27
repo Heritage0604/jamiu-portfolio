@@ -86,8 +86,8 @@ text:"5.	Data Analytics:  Data analysis  leading to actionable insights or influ
         }
     ]
   return (
-   <Flex flexDirection={"column"} bg={"#ffffff"} align={"center"}   justify={"center"} width={"100vw"}>
-    <motion.div variants={textVariant()}>
+   <Flex flexDirection={"column"} bg={"#ffffff"} align={"center"}  justify={"center"} width={"100vw"}>
+   
       <Flex align={"center"} flexDirection={"column"}>
       <Flex b  width={"80%"}>
       <Text fontSize={{base:"15px",md:"18px"}} color={"gray.900"} borderBottom={"1px solid#b0aea9"} pr={"25px"} height={"30px"} >
@@ -102,7 +102,7 @@ As a professional data analyst, I thrive on turning raw data into valuable insig
 </Text>
   </Flex>
 </Flex>
-    </motion.div>
+   
 
 
    <div className='mt-20 flex flex-col '>

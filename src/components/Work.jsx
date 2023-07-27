@@ -4,32 +4,65 @@ import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import {fadeIn,textVariant} from "../utils/motion"
-import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'
+import { Box, SimpleGrid, Flex,Image,Icon,Text, Link } from '@chakra-ui/react'
 import d6Logo from '../assets/d6.png'
 import j2 from '../assets/j2.jpg'
+import p1 from '../assets/Fourth.png'
+import p2 from '../assets/HR.png'
+import p3 from '../assets/Netflix.png'
+import p4 from '../assets/Mc.png'
+import {AiOutlineLink } from "react-icons/ai";
 
 const Work = () => {
   return (
-     <Flex flexDirection={"column"} align={"center"} bg={"#869af3ec"}   width={"100%"}>
-<Flex width={"80%"}>
-    <Text pr={"30px"} height={{bae:"30px",md:"40px"}} borderBottom={"1px solid white"} fontWeight={"300"} fontSize={{base:"15px",md:"25px"}}>ABOUT ME</Text>
+     <Flex mt={"-10vh"} align={"center"} bg={"#869af3ec"}   width={"100%"}>
+
+<Flex flexDirection={"column"} justify={"space-between"} mt={"3vh"} width={"80%"} >
+<Flex mb={"2vh"}  width={"80vw"} mt={"5vh"}>
+    <Text ml={"20px"}  mr={"10%"} pr={"30px"} height={{bae:"30px",md:"40px"}} borderBottom={"1px solid white"} fontWeight={"300"} fontSize={{base:"15px",md:"25px"}}>Projects</Text>
 </Flex>
-<Flex justify={"space-between"} mt={"3vh"} width={"80%"} >
-<Flex width={"70%"}><Text color={"white"}>
-    Hi, my name is Jamiu Gbadamosi, an ambitious undergraduate pursuing Mechatronics engineering. From my early days in high school, I've had a natural affinity for organizing and interpreting data to uncover meaningful trends. My journey began with Excel sheets, where I realized the power of data analysis in making informed decisions.
+<SimpleGrid justify={"center"} mb={"2vh"} columns={2} spacingX='40px' spacingY='20px' minChildWidth='200px' ml={"10%"}>
+  <Link    isExternal href={"https://drive.google.com/file/d/14qpjdYNnHDovVgmtH2jdsCHl-ruQo3GE/view?usp=share_link"} position={"relative"}  cursor="pointer" height='180px'>
+     <Icon color={"white"} fontSize={'18px'} position={"absolute"} right={"20px"} top={"15px"} as={AiOutlineLink}/>
+     <img
+    
+            src={p1}
+            alt={'Projects'}
+            className='w-[100%] h-[100%] object-cover'
+          />
+  </Link>
+<Link position={"relative"} isExternal href={"https://drive.google.com/file/d/1FQHaUvGAeioZZAqBJQoScAWAIFmPCcMt/view?usp=share_link"}>
+      <Icon color={"white"} fontSize={'18px'} position={"absolute"} right={"20px"} top={"15px"} as={AiOutlineLink}/>
+  <Box  height='180px'>
+     <img
+            src={p2}
+            alt={'Projects'}
+            className='w-[100%] h-[100%] object-cover'
+          />
+  </Box>
+</Link>
+  <Link position={"relative"} isExternal href={'https://drive.google.com/file/d/1TO-TfP8U4NU5BQyNQ4j1iTKuT0bmovc8/view?usp=share_link'} height='180px'>
+      <Icon color={"white"} fontSize={'18px'} position={"absolute"} right={"20px"} top={"15px"} as={AiOutlineLink}/>
+     <img
+            src={p3}
+            alt={'Projects'}
+            className='w-[100%] h-[100%] object-cover'
+          />
+  </Link>
+<Link position={"relative"} isExternal hre-={"https://drive.google.com/file/d/1PSxjjgPn6svKAMoqojrrmlWtX-zSlK7G/view?usp=share_link"}>
+      <Icon color={"white"} fontSize={'18px'} position={"absolute"} right={"20px"} top={"15px"} as={AiOutlineLink}/>
+  <Box  height='180px'>
+     <img
+            src={p4}
+            alt={'Projects'}
+            className='w-[100%] h-[100%] object-cover'
+          />
+  </Box></Link>
 
-As I progressed in my studies, I was introduced to the fascinating world of Machine Learning, and that's when everything clicked for me. The potential to derive valuable insights from vast datasets ignited my passion for data analytics. Determined to follow my newfound calling, I decided to embark on a career in data analytics.
+</SimpleGrid>
 
-Throughout my academic journey, I've honed my skills in SQL, Excel, and various data visualization tools, empowering me to transform raw data into actionable insights. Additionally, my background in Mechatronics engineering gives me a unique perspective on problem-solving and a knack for applying data-driven solutions to real-world challenges.
-
-I'm thrilled to leverage my analytical prowess and Machine Learning knowledge to help businesses unravel the hidden potential in their data. I am committed to delivering precise and impactful results that drive growth and enhance decision-making processes.
-
-Join me on this data-driven journey, and let's discover the true power of your data together
-
-    </Text></Flex>
-<Flex display={{base:"none",md:"flex"}}><Image width={'300px'} src={j2}/></Flex>
 </Flex>
-<Flex display={{base:"flex",md:"none"}}><Image width={'250px'} src={j2}/></Flex>
+
    </Flex>
   )
 }

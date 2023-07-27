@@ -11,12 +11,12 @@ import j2 from '../assets/j2.jpg'
 const About = () => {
   return (
    <Flex flexDirection={"column"} align={"center"} bg={"#869af3ec"}   width={"100%"}>
-      <motion.div variants={textVariant()}>
-<Flex  width={"80vw"} mt={"5vh"}>
+      
+<Flex  width={"70vw"} mt={"5vh"}>
     <Text pr={"30px"} height={{bae:"30px",md:"40px"}} borderBottom={"1px solid white"} fontWeight={"300"} fontSize={{base:"15px",md:"25px"}}>ABOUT ME</Text>
 </Flex>
 <Flex justify={"space-between"} mt={"3vh"} width={"80vw"} >
-<Flex mb={'2vh'} width={{base:"100%",md:"70%"}}><Text color={"white"}>
+<Flex mb={'2vh'}  width={{base:"100vw",md:"100%"}}><Text ml={"10px"} mr={"10px"} color={"white"}>
     Hi, my name is Jamiu Gbadamosi, an ambitious undergraduate pursuing Mechatronics engineering. From my early days in high school, I've had a natural affinity for organizing and interpreting data to uncover meaningful trends. My journey began with Excel sheets, where I realized the power of data analysis in making informed decisions.
 
 As I progressed in my studies, I was introduced to the fascinating world of Machine Learning, and that's when everything clicked for me. The potential to derive valuable insights from vast datasets ignited my passion for data analytics. Determined to follow my newfound calling, I decided to embark on a career in data analytics.
@@ -28,10 +28,10 @@ I'm thrilled to leverage my analytical prowess and Machine Learning knowledge to
 Join me on this data-driven journey, and let's discover the true power of your data together
 
     </Text></Flex>
-<Flex display={{base:"none",md:"flex"}}><Image width={'300px'} src={j2}/></Flex>
+<Flex mr={"3%"} ml={"3%"} display={{base:"none",md:"flex"}}><Image width={'250px'} height={"250px"} src={j2}/></Flex>
 </Flex>
-<Flex display={{base:"flex",md:"none"}}><Image width={'250px'} src={j2}/></Flex>
-      </motion.div>
+<Flex display={{base:"flex",md:"none"}} justify={"center"}><Image width={'250px'} src={j2}/></Flex>
+    
 
 
    </Flex>
