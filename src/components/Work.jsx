@@ -11,14 +11,6 @@ import p1 from '../assets/Fourth.jpg'
 import p2 from '../assets/HR.jpg'
 import p3 from '../assets/Netflix.jpg'
 import p4 from '../assets/Mc.jpg'
-import {fadeIn,textVariant} from "../utils/motion"
-import { Box, SimpleGrid, Flex,Image,Icon,Text, Link } from '@chakra-ui/react'
-import d6Logo from '../assets/d6.png'
-import j2 from '../assets/j2.jpg'
-import p1 from '../assets/Fourth.png'
-import p2 from '../assets/HR.png'
-import p3 from '../assets/Netflix.png'
-import p4 from '../assets/Mc.png'
 import {AiOutlineLink } from "react-icons/ai";
 
 const Work = () => {
