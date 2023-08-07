@@ -70,7 +70,7 @@ const Navbar = () => {
 
       <Link onClick={onTop6} cursor="pointer" display={{base:"none",md:"flex"}} _hover={{color:"blue.400",transition:"0.5s"}}>PROJECTS</Link>
 
-      <Link cursor="pointer" display={{base:"none",md:"flex"}} _hover={{color:"blue.400",transition:"0.5s"}}>WORKS</Link>
+
 
       <Link onClick={onTop5} display={{base:"none",md:"flex"}} cursor="pointer" _hover={{color:"blue.400",transition:"0.5s"}}>CONTACT </Link>
 
@@ -88,7 +88,7 @@ const Navbar = () => {
     </MenuItem>
 
     <MenuItem onClick={onTop7}>
-     <Link  display={{base:"flex",md:"none"}} cursor="pointer " _hover={{color:"blue.400",transition:"0.5s"}}>WORK</Link>
+     <Link  display={{base:"flex",md:"none"}} cursor="pointer " _hover={{color:"blue.400",transition:"0.5s"}}>PROJECT</Link>
      </MenuItem>
   <MenuItem onClick={onTop3}>
           <Link  display={{base:"flex",md:"none"}}   cursor="pointer" _hover={{color:"blue.400",transition:"0.5s"}}>CONTACT </Link>
