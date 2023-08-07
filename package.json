@@ -4,11 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-<<<<<<< HEAD
-    "dev" : "vite --host",
-=======
     "dev": "vite --host",
->>>>>>> 51a1b6d8a1137472deb1fe6ede5ace4a41a20c3b
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
