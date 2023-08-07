@@ -10,7 +10,7 @@ import j2 from '../assets/j2.jpg'
 
 const About = () => {
   return (
-   <Flex flexDirection={"column"} align={"center"} bg={"#869af3ec"}   width={"100"}>
+   <Flex flexDirection={"column"} align={"center"} bg={"#869af3ec"}   width={"100%"}>
       
 <Flex  width={"70vw"} mt={"5vh"}>
     <Text pr={"30px"} height={{bae:"30px",md:"40px"}} borderBottom={"1px solid white"} fontWeight={"300"} fontSize={{base:"15px",md:"25px"}}>ABOUT ME</Text>
