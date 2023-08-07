@@ -4,7 +4,7 @@ import { Button, Link } from '@chakra-ui/react'
 import {styles} from "../styles"
 
   import reactLogo from '../assets/react.svg'
-import forestLogo from '../assets/forest.svg'
+import forestLogo from '../assets/hero.jpg'
 import forest2Logo from '../assets/forest2.svg'
 import viteLogo from '/vite.svg'
 import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'
