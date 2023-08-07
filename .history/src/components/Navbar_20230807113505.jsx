@@ -34,7 +34,7 @@ const Navbar = () => {
 }
   const onTop2=()=>{
   window.scrollTo({ top: 2200, left: 0, behavior: 'smooth' });
-<<<<<<< HEAD 
+<<<<<<< HEAD
 =======
 }
   const onTop3=()=>{
