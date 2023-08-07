@@ -34,8 +34,7 @@ const Navbar = () => {
 }
   const onTop2=()=>{
   window.scrollTo({ top: 2200, left: 0, behavior: 'smooth' });
-<<<<<<< HEAD 
-=======
+
 }
   const onTop3=()=>{
   window.scrollTo({ top: 5100, left: 0, behavior: 'smooth' });
@@ -45,17 +44,11 @@ const Navbar = () => {
 }
   const onTop5=()=>{
   window.scrollTo({ top: 3400, left: 0, behavior: 'smooth' });
->>>>>>> 51a1b6d8a1137472deb1fe6ede5ace4a41a20c3b
+
 }
-  const onTop3=()=>{
-  window.scrollTo({ top: 5100, left: 0, behavior: 'smooth' });
-}
-  const onTop4=()=>{
-  window.scrollTo({ top: 2000, left: 0, behavior: 'smooth' });
-}
-  const onTop5=()=>{
-  window.scrollTo({ top: 3400, left: 0, behavior: 'smooth' });
-}
+
+
+
   const onTop6=()=>{
   window.scrollTo({ top: 2800, left: 0, behavior: 'smooth' });
 }
@@ -74,11 +67,11 @@ const Navbar = () => {
     <Flex  fontSize={{base:"13px",md:"18px"}} justifyContent="space-between" ml={{base:'15%',md:"20%"}} width={{base:"85%",md:"40%"}} >
       <Link onClick={onTop} display={{base:"none",md:"flex"}} cursor="pointer" _hover={{color:"blue.400",transition:"0.5s"}}>SERVICES</Link>
       <Link onClick={onTop4} display={{base:"none",md:"flex"}} cursor="pointer " _hover={{color:"blue.400",transition:"0.5s"}}>ABOUT ME</Link>
-<<<<<<< HEAD
+
       <Link onClick={onTop6} cursor="pointer" display={{base:"none",md:"flex"}} _hover={{color:"blue.400",transition:"0.5s"}}>PROJECTS</Link>
-=======
+
       <Link cursor="pointer" display={{base:"none",md:"flex"}} _hover={{color:"blue.400",transition:"0.5s"}}>WORKS</Link>
->>>>>>> 51a1b6d8a1137472deb1fe6ede5ace4a41a20c3b
+
       <Link onClick={onTop5} display={{base:"none",md:"flex"}} cursor="pointer" _hover={{color:"blue.400",transition:"0.5s"}}>CONTACT </Link>
 
 <Flex display={{base:"flex",md:"none"}} ml={"70%"} mr={"20px"}>
@@ -93,13 +86,11 @@ const Navbar = () => {
     <MenuItem onClick={onTop2}>
      <Link  display={{base:"flex",md:"none"}} cursor="pointer " _hover={{color:"blue.400",transition:"0.5s"}}>ABOUT ME</Link>
     </MenuItem>
-<<<<<<< HEAD
+
     <MenuItem onClick={onTop7}>
      <Link  display={{base:"flex",md:"none"}} cursor="pointer " _hover={{color:"blue.400",transition:"0.5s"}}>WORK</Link>
-    </MenuItem>
-=======
->>>>>>> 51a1b6d8a1137472deb1fe6ede5ace4a41a20c3b
-    <MenuItem onClick={onTop3}>
+     </MenuItem>
+  <MenuItem onClick={onTop3}>
           <Link  display={{base:"flex",md:"none"}}   cursor="pointer" _hover={{color:"blue.400",transition:"0.5s"}}>CONTACT </Link>
     </MenuItem>
   

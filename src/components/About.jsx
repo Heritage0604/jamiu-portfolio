@@ -29,11 +29,7 @@ I'm thrilled to leverage my analytical prowess and Machine Learning knowledge to
 Join me on this data-driven journey, and let's discover the true power of your data together
 
     </Text></Flex>
-<<<<<<< HEAD
 <Flex mr={"3%"} ml={"3%"} display={{base:"none",md:"flex"}}>   <img className='w-[250px]  object-cover'   src={j2} alt='picture of me' /></Flex>
-=======
-<Flex mr={"3%"} ml={"3%"} display={{base:"none",md:"flex"}}><Image width={'250px'} height={"250px"} src={j2}/></Flex>
->>>>>>> 51a1b6d8a1137472deb1fe6ede5ace4a41a20c3b
 </Flex>
 <Flex display={{base:"flex",md:"none"}} justify={"center"}><Image width={'250px'} src={j2}/></Flex>
     
