@@ -37,7 +37,7 @@ const Work = () => {
             alt={'Projects'}
             className='w-[100%] h-[80%] object-cover'
           />
-            <Link isExternal href={"https://drive.google.com/file/d/14qpjdYNnHDovVgmtH2jdsCHl-ruQo3GE/view?usp=share_link"}  ml={"10%"}>
+            <Link isExternal href={"https://drive.google.com/drive/folders/1-HnYumzlDagxnoUby8wxnt5wM_w4UxNQ"}  ml={"10%"}>
            Dashboard
           </Link>
           <Link isExternal href={"https://medium.com/@jamzy.j21/buy-it-and-ride-it-f376c3943c8"} ml={"10%"}>
@@ -68,7 +68,7 @@ const Work = () => {
             alt={'Projects'}
             className='w-[100%] h-[80%] object-cover'
           />
-          <Link isExternal href={"https://drive.google.com/file/d/1TO-TfP8U4NU5BQyNQ4j1iTKuT0bmovc8/view?usp=share_link"}  ml={"10%"}>
+          <Link isExternal href={"https://drive.google.com/drive/folders/1-KDN0vkUuOJ4wXEVAILzh9LTJCi-DfOP"}  ml={"10%"}>
            Dashboard
           </Link>
           <Link isExternal href={"https://medium.com/@jamzy.j21/netflix-sees-you-f79d9a12f69e"} ml={"10%"}>
@@ -85,7 +85,7 @@ const Work = () => {
             className='w-[100%] h-[80%] object-cover'
           />
   
-    <Link isExternal href={"https://drive.google.com/file/d/1PSxjjgPn6svKAMoqojrrmlWtX-zSlK7G/view?usp=share_link"}  ml={"10%"}>
+    <Link isExternal href={"https://drive.google.com/drive/folders/1yBRfwDViGXXTzjyQHMM69G3jKOSCOd6A"}  ml={"10%"}>
            Dashboard
           </Link>
           <Link isExternal href={"https://medium.com/@jamzy.j21/we-analyze-junk-too-221c5ec0b752"} ml={"10%"}>
