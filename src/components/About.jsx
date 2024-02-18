@@ -10,6 +10,7 @@ import j2 from '../assets/j2.jpg'
 
 const About = () => {
   return (
+    <motion.div variants={textVariant()}>
    <Flex flexDirection={"column"} align={"center"} bg={"#869af3ec"}   width={"100%"}>
       
 <Flex  width={"70vw"} mt={"5vh"}>
@@ -30,13 +31,14 @@ Join me on this data-driven journey, and let's discover the true power of your d
 
  ELEVATOR PITCH : <Link    isExternal href={"https://drive.google.com/drive/folders/1-UjBafWoQV8hbfR_N-AuQtDs6lv9HrNm"} position={"relative"}  cursor="pointer" height='180px'> Click here <span className='h-[180px]'>&#8594;</span> </Link>
     </Text></Flex>
-<Flex mr={"3%"} ml={"3%"} display={{base:"none",md:"flex"}}><Image width={'250px'} height={"250px"} src={j2}/></Flex>
+<Flex mr={"3%"} ml={"3%"} display={{base:"none",md:"flex"}}>   <img className='w-[250px]  object-cover'   src={j2} alt='picture of me' /></Flex>
 </Flex>
 <Flex display={{base:"flex",md:"none"}} justify={"center"}><Image width={'250px'} src={j2}/></Flex>
     
 
 
    </Flex>
+   </motion.div>
   )
 }
 

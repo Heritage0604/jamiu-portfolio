@@ -1,0 +1,18 @@
+{
+    "sourceFile": "package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1690365206872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1690365206872,
+            "name": "Commit-0",
+            "content": "{\n  \"name\": \"jamui-portfolio\",\n  \"private\": true,\n  \"version\": \"0.0.0\",\n  \"type\": \"module\",\n  \"scripts\": {\n    \"dev\" : \"vite --host\",\n    \"build\": \"vite build\",\n    \"lint\": \"eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0\",\n    \"preview\": \"vite preview\"\n  },\n  \"dependencies\": {\n    \"@chakra-ui/icons\": \"^2.1.0\",\n    \"@chakra-ui/react\": \"^2.8.0\",\n    \"@emotion/react\": \"^11.11.1\",\n    \"@emotion/styled\": \"^11.11.0\",\n    \"framer-motion\": \"^10.13.1\",\n    \"react\": \"^18.2.0\",\n    \"react-dom\": \"^18.2.0\",\n    \"react-icons\": \"^4.10.1\",\n    \"react-router-dom\": \"^6.14.2\",\n    \"react-tilt\": \"^1.0.2\",\n    \"react-vertical-timeline-component\": \"^3.6.0\"\n  },\n  \"devDependencies\": {\n    \"@types/react\": \"^18.2.15\",\n    \"@types/react-dom\": \"^18.2.7\",\n    \"@vitejs/plugin-react\": \"^4.0.3\",\n    \"autoprefixer\": \"^10.4.14\",\n    \"eslint\": \"^8.45.0\",\n    \"eslint-plugin-react\": \"^7.32.2\",\n    \"eslint-plugin-react-hooks\": \"^4.6.0\",\n    \"eslint-plugin-react-refresh\": \"^0.4.3\",\n    \"postcss\": \"^8.4.27\",\n    \"tailwindcss\": \"^3.3.3\",\n    \"vite\": \"^4.4.5\"\n  }\n}\n"
+        }
+    ]
+}

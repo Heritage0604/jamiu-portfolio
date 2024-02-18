@@ -4,7 +4,7 @@ import { Button, Link } from '@chakra-ui/react'
 import {styles} from "../styles"
 
   import reactLogo from '../assets/react.svg'
-import forestLogo from '../assets/forest.svg'
+import forestLogo from '../assets/hero.jpg'
 import forest2Logo from '../assets/forest2.svg'
 import viteLogo from '/vite.svg'
 import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'
@@ -29,8 +29,12 @@ const Navbar = () => {
   const onTop=()=>{
   window.scrollTo({ top: 500, left: 0, behavior: 'smooth' });
 }
+  const onTop1=()=>{
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+}
   const onTop2=()=>{
   window.scrollTo({ top: 2200, left: 0, behavior: 'smooth' });
+
 }
   const onTop3=()=>{
   window.scrollTo({ top: 5100, left: 0, behavior: 'smooth' });
@@ -40,23 +44,34 @@ const Navbar = () => {
 }
   const onTop5=()=>{
   window.scrollTo({ top: 3400, left: 0, behavior: 'smooth' });
+
 }
-//   const onTop6=()=>{
-//   window.scrollTo({ top: 3600, left: 0, behavior: 'smooth' });
-// }
+
+
+
+  const onTop6=()=>{
+  window.scrollTo({ top: 2800, left: 0, behavior: 'smooth' });
+}
+  const onTop7=()=>{
+  window.scrollTo({ top: 3800, left: 0, behavior: 'smooth' });
+}
 
   return (
    <Flex align={"center"} flexDirection={"column"}>
      <Flex  position={"fixed"} top={"0px"} zIndex={20} border={"1px solid #e8edea "} boxShadow='lg' rounded='md' bg='white' height={"10vh"} align={'center'} width={"100vw"} >
    <Flex ml={{base:'3%',md:"10%"}}>
-    <Link  href='/' cursor="pointer" _hover={{color:"blue.400",transition:"0.5s"}}  fontSize={{base:"13px",md:"18px"}}>
+    <Link onClick={onTop1}  cursor="pointer" _hover={{color:"blue.400",transition:"0.5s"}}  fontSize={{base:"13px",md:"18px"}}>
     JAMIU
     </Link>
     </Flex>
     <Flex  fontSize={{base:"13px",md:"18px"}} justifyContent="space-between" ml={{base:'15%',md:"20%"}} width={{base:"85%",md:"40%"}} >
       <Link onClick={onTop} display={{base:"none",md:"flex"}} cursor="pointer" _hover={{color:"blue.400",transition:"0.5s"}}>SERVICES</Link>
       <Link onClick={onTop4} display={{base:"none",md:"flex"}} cursor="pointer " _hover={{color:"blue.400",transition:"0.5s"}}>ABOUT ME</Link>
-      <Link cursor="pointer" display={{base:"none",md:"flex"}} _hover={{color:"blue.400",transition:"0.5s"}}>WORKS</Link>
+
+      <Link onClick={onTop6} cursor="pointer" display={{base:"none",md:"flex"}} _hover={{color:"blue.400",transition:"0.5s"}}>PROJECTS</Link>
+
+
+
       <Link onClick={onTop5} display={{base:"none",md:"flex"}} cursor="pointer" _hover={{color:"blue.400",transition:"0.5s"}}>CONTACT </Link>
 
 <Flex display={{base:"flex",md:"none"}} ml={"70%"} mr={"20px"}>
@@ -71,7 +86,11 @@ const Navbar = () => {
     <MenuItem onClick={onTop2}>
      <Link  display={{base:"flex",md:"none"}} cursor="pointer " _hover={{color:"blue.400",transition:"0.5s"}}>ABOUT ME</Link>
     </MenuItem>
-    <MenuItem onClick={onTop3}>
+
+    <MenuItem onClick={onTop7}>
+     <Link  display={{base:"flex",md:"none"}} cursor="pointer " _hover={{color:"blue.400",transition:"0.5s"}}>PROJECT</Link>
+     </MenuItem>
+  <MenuItem onClick={onTop3}>
           <Link  display={{base:"flex",md:"none"}}   cursor="pointer" _hover={{color:"blue.400",transition:"0.5s"}}>CONTACT </Link>
     </MenuItem>
   
@@ -86,7 +105,7 @@ const Navbar = () => {
 
       <Flex mt={"15vh"} justify="center"  position={"relative"} height={"80vh"}>
        <Text color={"white"} border={"1px solid white"} height={"px"} borderRadius={"10px"} position={"absolute"} top={"50%"} transform={" translate(-50%, -50%);"} left={"50%"}>Jamiu Data Analyst</Text>
-        <Image objectFit='cover' width={"90vw"}   src={forest2Logo} alt='forest' />
+        <img className='w-[90vw] height-[80vw] object-cover'   src={forest2Logo} alt='forest' />
       </Flex>
 
 

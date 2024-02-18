@@ -29,7 +29,7 @@ const Contact = () => {
 <Text fontSize={"18px"} fontWeight={"900"}>Jamiu</Text>
 
 <br/>
-As data scientist, I know exactly how you can use data optimally within your business. Based on your objectives, we will make a plan to reach the right insight.
+As data analyst, I know exactly how you can use data optimally within your business. Based on your objectives, we will make a plan to reach the right insight.
 </Text>
   </Flex>
 
