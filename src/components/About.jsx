@@ -4,7 +4,7 @@ import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import {fadeIn,textVariant} from "../utils/motion"
-import { Box, Flex,Image,Icon,Text } from '@chakra-ui/react'
+import { Box, Flex,Image,Icon,Text,Link } from '@chakra-ui/react'
 import d6Logo from '../assets/d6.png'
 import j2 from '../assets/j2.jpg'
 
@@ -26,7 +26,9 @@ Throughout my academic journey, I've honed my skills in SQL, Excel, and various 
 I'm thrilled to leverage my analytical prowess and Machine Learning knowledge to help businesses unravel the hidden potential in their data. I am committed to delivering precise and impactful results that drive growth and enhance decision-making processes.
 
 Join me on this data-driven journey, and let's discover the true power of your data together
+<br/>
 
+ ELEVATOR PITCH : <Link    isExternal href={"https://drive.google.com/drive/folders/1-UjBafWoQV8hbfR_N-AuQtDs6lv9HrNm"} position={"relative"}  cursor="pointer" height='180px'> Click here <span className='h-[180px]'>&#8594;</span> </Link>
     </Text></Flex>
 <Flex mr={"3%"} ml={"3%"} display={{base:"none",md:"flex"}}><Image width={'250px'} height={"250px"} src={j2}/></Flex>
 </Flex>
